@@ -1,0 +1,13 @@
+﻿@model AppTarefas.Models.Tarefa
+@{
+	ViewData["Title"] = "Detalhes da Tarefa";
+}
+
+<h1>Detalhes da Tarefa</h1>
+
+<p><b>ID:</b> @Model.TarefaID</p>
+<p><b>Título:</b> @Model.Titulo</p>
+<p><b>Descrição:</b> @Model.Descricao</p>
+<p><b>Conluída:</b> @(Model.Concluida ? "Sim" : "Não")</p>
+
+<a asp-asp-controller="Tarefas" asp-action="Index" class="btn btn-secondary mt-3">Voltar</a>
